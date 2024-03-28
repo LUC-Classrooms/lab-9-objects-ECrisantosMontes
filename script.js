@@ -2,7 +2,7 @@
 * COMP 125 Lab 9 - Object Oriented Programming (OOP)
 */
 
-var myObj1, myObj2, myObj3; // global variables to hold object instances
+var myObj1, myObj2, myObj3, myObj4; // global variables to hold object instances
 
 function setup() {
   createCanvas(500, 400);
@@ -14,6 +14,7 @@ function setup() {
  myObj1 = new MyClass(width/2, height/2);
  myObj2 = new MyClass(300, 200);
  myObj3 = new MyClass(200, 200);
+ myObj4 = new MyClass(300, 400);
  //console.log(myobj1)
 }
 
@@ -29,6 +30,10 @@ function draw() {
   myObj3.display();
   myObj3.move();
   myObj3.r += .01
+  myObj4.display();
+  myObj4.move();
+  myObj4.r += .0;
+
 }
 
 //Class constructor:
