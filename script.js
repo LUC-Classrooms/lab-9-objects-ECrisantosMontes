@@ -23,7 +23,7 @@ function draw() {
   // add code here to make your objects move and display on canvas
   myObj1.display();
   myObj1.move();
-  myObj1.r += .01;
+  myObj1.r += .04;
   myObj2.display();
   myObj2.move(); 
   myObj2.r += .01;
@@ -43,8 +43,8 @@ function MyClass(tempX, tempY){
   this.x = tempX; // assign the first argument to the x property
   this.y = tempY; // assign the second argument to the y property
   this.d = random(25, 100); //each instance will be a different size
-  this.xSpeed = random (-1.0, 1.0); // each instance moves in a different direction
-  this.ySpeed = random (-1.0, 1.0);
+  this.xSpeed = random (-5.0, 5.0); // each instance moves in a different direction
+  this.ySpeed = random (-5.0, 5.0);
   this.color = color(random(255), random(255), random(255));
   this.good = false;
   this.r = random(TWO_PI);
